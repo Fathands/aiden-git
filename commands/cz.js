@@ -19,12 +19,10 @@ const question = [
 
 module.exports = prompt(question).then(({ type, description }) => {
 
-  let results
   try {
-    results = execSync(`git commit -m "${type}: ${description}"`, { encoding: 'utf-8' })
-    console.log(results, 11);
+    execSync(`git commit -m "${type}: ${description}"`, { encoding: 'utf-8' })
   } catch (err) {
-    console.log(err, 22);
+    console.log(err.stdout);
     process.exit(0)
   }
 
