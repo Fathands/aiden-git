@@ -1,0 +1,23 @@
+{
+  "name": "aiden-git",
+  "version": "0.0.1",
+  "description": "tool for git commit",
+  "main": "index.js",
+  "bin": {
+    "aiden-git": "bin/aiden-git.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fathands/aiden-git.git"
+  },
+  "author": "aiden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fathands/aiden-git/issues"
+  },
+  "homepage": "https://github.com/Fathands/aiden-git#readme",
+  "dependencies": {
+    "commander": "^4.0.0",
+    "inquirer": "^7.0.0"
+  }
+}
