@@ -16,4 +16,15 @@ program.command('cz')
     require(getCommand('cz'))
   });
 
+program.command('push')
+.description('tool for git push')
+.action((command, params) => {
+  const branch = params[0]
+  
+  if (branch) {
+    const push = require(getCommand('push'));
+    push(branch);
+  }
+});
+
 program.parse(process.argv);

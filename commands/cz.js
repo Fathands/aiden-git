@@ -1,7 +1,7 @@
 const { prompt } = require('inquirer');
 
 const commit_types = require('../constants/commit-types');
-const execSync = require('child_process').execSync
+const execSync = require('child_process').execSync;
 
 const question = [
   {
